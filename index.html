@@ -12,7 +12,7 @@
             font-family: 'Arial', sans-serif;
         }
         body {
-            background-color: #006400;
+            background-color: #f4f4f4;
             padding: 20px;
         }
 
@@ -26,18 +26,18 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
-        /* Gradasi untuk setiap paragraf */
+        /* Warna latar belakang untuk setiap paragraf */
         .paragraf-1 {
-            background: linear-gradient(90deg, #0d47a1, #2196f3);
+            background: linear-gradient(90deg, #1e88e5, #64b5f6);
         }
         .paragraf-2 {
-            background: linear-gradient(90deg, #f57c00, #ffcc80);
+            background: linear-gradient(90deg, #e53935, #ef5350);
         }
         .paragraf-3 {
-            background: linear-gradient(90deg, #004d40, #26a69a);
+            background: linear-gradient(90deg, #43a047, #66bb6a);
         }
         .paragraf-4 {
-            background: linear-gradient(90deg, #6a1b9a, #ba68c8);
+            background: linear-gradient(90deg, #8e24aa, #ab47bc);
         }
 
         /* Pemisah dengan garis benang kusut */
@@ -51,12 +51,13 @@
         .separator::before {
             content: '';
             position: absolute;
+            width: 200%;
+            height: 50px;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="500" height="50"><path d="M0 25 Q50 10 100 25 T500 25" stroke="white" stroke-width="1.5" fill="none"/><path d="M0 30 Q40 45 90 20 T500 30" stroke="white" stroke-width="1.5" fill="none"/><path d="M0 20 Q60 0 120 40 T500 20" stroke="white" stroke-width="1.5" fill="none"/></svg>');
+            background-size: cover;
             left: 0;
             top: 0;
-            width: 100%;
-            height: 50px;
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="500" height="50"><path d="M0 25 Q50 0 100 25 T500 25" stroke="white" stroke-width="2" fill="none"/><path d="M0 25 Q50 50 100 25 T500 25" stroke="white" stroke-width="2" fill="none"/></svg>');
-            animation: glow 0.5s infinite alternate linear;
+            animation: glow 2s infinite alternate linear;
         }
 
         /* Animasi efek glow */
