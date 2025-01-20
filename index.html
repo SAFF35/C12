@@ -12,7 +12,7 @@
             font-family: 'Arial', sans-serif;
         }
         body {
-            background-color: #f4f4f4;
+            background-color: #000;
             padding: 20px;
         }
 
@@ -26,21 +26,36 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
-        /* Warna latar belakang untuk setiap paragraf */
+        /* Warna untuk kontainer dan latar belakang */
         .paragraf-1 {
-            background: linear-gradient(90deg, #1e88e5, #64b5f6);
+            background-color: #1e88e5; /* Biru cerah */
         }
-        .paragraf-2 {
-            background: linear-gradient(90deg, #e53935, #ef5350);
-        }
-        .paragraf-3 {
-            background: linear-gradient(90deg, #43a047, #66bb6a);
-        }
-        .paragraf-4 {
-            background: linear-gradient(90deg, #8e24aa, #ab47bc);
+        .paragraf-1-container {
+            background-color: #0d47a1; /* Biru tua */
         }
 
-        /* Pemisah dengan garis benang kusut */
+        .paragraf-2 {
+            background-color: #e53935; /* Merah cerah */
+        }
+        .paragraf-2-container {
+            background-color: #b71c1c; /* Merah tua */
+        }
+
+        .paragraf-3 {
+            background-color: #43a047; /* Hijau cerah */
+        }
+        .paragraf-3-container {
+            background-color: #1b5e20; /* Hijau tua */
+        }
+
+        .paragraf-4 {
+            background-color: #8e24aa; /* Ungu cerah */
+        }
+        .paragraf-4-container {
+            background-color: #4a148c; /* Ungu tua */
+        }
+
+        /* Pemisah dengan garis benang sangat kusut */
         .separator {
             width: 100%;
             height: 50px;
@@ -53,20 +68,23 @@
             position: absolute;
             width: 200%;
             height: 50px;
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="500" height="50"><path d="M0 25 Q50 10 100 25 T500 25" stroke="white" stroke-width="1.5" fill="none"/><path d="M0 30 Q40 45 90 20 T500 30" stroke="white" stroke-width="1.5" fill="none"/><path d="M0 20 Q60 0 120 40 T500 20" stroke="white" stroke-width="1.5" fill="none"/></svg>');
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="500" height="50"><path d="M0 25 Q50 10 100 40 T500 25" stroke="white" stroke-width="1" fill="none"/><path d="M0 30 Q30 45 80 15 T500 30" stroke="white" stroke-width="1" fill="none"/><path d="M0 20 Q40 5 120 45 T500 20" stroke="white" stroke-width="1" fill="none"/></svg>');
             background-size: cover;
             left: 0;
             top: 0;
-            animation: glow 2s infinite alternate linear;
+            animation: blink 0.3s infinite alternate;
         }
 
-        /* Animasi efek glow */
-        @keyframes glow {
-            from {
-                filter: drop-shadow(0 0 10px white);
+        /* Animasi berkedip cepat */
+        @keyframes blink {
+            0% {
+                opacity: 1;
             }
-            to {
-                filter: drop-shadow(0 0 30px white);
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
             }
         }
     </style>
@@ -74,26 +92,34 @@
 <body>
 
     <!-- Paragraf 1 -->
-    <div class="paragraf paragraf-1">
-        <p>Burung adalah hewan yang dikenal dengan kemampuan terbangnya. Mereka memiliki sayap yang memungkinkan mereka untuk menjelajahi langit. Burung juga memiliki berbagai macam suara yang bisa digunakan untuk berkomunikasi atau menarik perhatian pasangannya.</p>
+    <div class="paragraf-1-container">
+        <div class="paragraf paragraf-1">
+            <p>Burung adalah hewan yang dikenal dengan kemampuan terbangnya. Mereka memiliki sayap yang memungkinkan mereka untuk menjelajahi langit. Burung juga memiliki berbagai macam suara yang bisa digunakan untuk berkomunikasi atau menarik perhatian pasangannya.</p>
+        </div>
     </div>
     <div class="separator"></div>
 
     <!-- Paragraf 2 -->
-    <div class="paragraf paragraf-2">
-        <p>Ular adalah reptil yang memiliki tubuh panjang dan ramping. Mereka tidak memiliki kaki, tetapi bergerak dengan cara melata. Ular seringkali ditemukan di hutan atau gurun, dan beberapa jenis ular berbahaya dengan bisa yang mematikan.</p>
+    <div class="paragraf-2-container">
+        <div class="paragraf paragraf-2">
+            <p>Ular adalah reptil yang memiliki tubuh panjang dan ramping. Mereka tidak memiliki kaki, tetapi bergerak dengan cara melata. Ular seringkali ditemukan di hutan atau gurun, dan beberapa jenis ular berbahaya dengan bisa yang mematikan.</p>
+        </div>
     </div>
     <div class="separator"></div>
 
     <!-- Paragraf 3 -->
-    <div class="paragraf paragraf-3">
-        <p>Kodok adalah amfibi yang biasanya hidup di dekat perairan. Mereka memiliki kulit yang lembab dan tubuh yang cenderung gemuk. Kodok dikenal dengan loncatannya yang tinggi dan suaranya yang khas saat musim kawin.</p>
+    <div class="paragraf-3-container">
+        <div class="paragraf paragraf-3">
+            <p>Kodok adalah amfibi yang biasanya hidup di dekat perairan. Mereka memiliki kulit yang lembab dan tubuh yang cenderung gemuk. Kodok dikenal dengan loncatannya yang tinggi dan suaranya yang khas saat musim kawin.</p>
+        </div>
     </div>
     <div class="separator"></div>
 
     <!-- Paragraf 4 -->
-    <div class="paragraf paragraf-4">
-        <p>Ayam adalah unggas yang sering dijadikan hewan peliharaan dan sumber pangan. Mereka memiliki bulu yang halus dan kokok yang khas. Ayam juga menghasilkan telur yang berguna sebagai makanan sehari-hari.</p>
+    <div class="paragraf-4-container">
+        <div class="paragraf paragraf-4">
+            <p>Ayam adalah unggas yang sering dijadikan hewan peliharaan dan sumber pangan. Mereka memiliki bulu yang halus dan kokok yang khas. Ayam juga menghasilkan telur yang berguna sebagai makanan sehari-hari.</p>
+        </div>
     </div>
 
 </body>
