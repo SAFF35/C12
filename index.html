@@ -13,110 +13,72 @@
         }
 
         body {
-            background-color: #fff8e1; /* Warna dasar background tubuh */
-            padding: 20px 10px;
+            background: linear-gradient(to bottom, #ffe082, #ffca28, #ffa000, #f57c00); /* Gradasi oranye cerah */
+            margin: 0;
+            padding: 20px 0;
+            color: #fff;
         }
 
-        /* Warna background untuk tiap section (LB lebih gelap dari kontainer) */
-        .section-1 {
-            background-color: #ffecb3; /* LB Oranye muda */
-            padding: 20px 10px;
-            position: relative;
-        }
-        .section-2 {
-            background-color: #ffd54f; /* LB Oranye medium */
-            padding: 20px 10px;
-            position: relative;
-        }
-        .section-3 {
-            background-color: #ffb300; /* LB Oranye lebih gelap */
-            padding: 20px 10px;
-            position: relative;
-        }
-        .section-4 {
-            background-color: #ff6f00; /* LB Oranye tua */
-            padding: 20px 10px;
-            position: relative;
-        }
-
-        /* Style paragraf */
-        .paragraf {
+        .content {
             margin: 0 auto;
+            max-width: 800px;
             padding: 20px;
-            text-align: center;
-            color: #ffffff; /* Teks putih */
+        }
+
+        .paragraf {
+            margin: 20px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             font-size: 1.2em;
-            width: 90%;
-            max-width: 600px;
+            line-height: 1.8;
         }
 
-        /* Warna gradasi cerah untuk container */
-        .paragraf-1 {
-            background: linear-gradient(90deg, #ffe082, #ffd54f); /* Kontainer Oranye muda cerah */
-        }
-        .paragraf-2 {
-            background: linear-gradient(90deg, #ffca28, #ffc107); /* Kontainer Oranye medium cerah */
-        }
-        .paragraf-3 {
-            background: linear-gradient(90deg, #ffa000, #ff8f00); /* Kontainer Oranye lebih gelap cerah */
-        }
-        .paragraf-4 {
-            background: linear-gradient(90deg, #f57c00, #ef6c00); /* Kontainer Oranye tua */
-        }
-
-        /* Teks judul tebal */
-        .paragraf p span {
+        /* Huruf tebal dan timbul */
+        .paragraf strong {
+            color: #ffe082;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
             font-weight: bold;
-            font-size: 1.3em;
-        }
-
-        /* Pemisah berbentuk gelombang */
-        .wave-separator {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 50px;
-            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120"><path fill="white" fill-opacity="1" d="M0,96L60,85.3C120,75,240,53,360,80C480,107,600,181,720,186.7C840,192,960,128,1080,112C1200,96,1320,128,1380,144L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>');
-            background-repeat: no-repeat;
-            background-size: cover;
-            transform: scaleY(-1);
         }
     </style>
 </head>
 <body>
-
-    <!-- Section 1 -->
-    <div class="section-1">
-        <div class="paragraf paragraf-1">
-            <p><span>Burung:</span> Burung adalah hewan yang dikenal dengan kemampuan terbangnya. Mereka memiliki sayap yang memungkinkan mereka untuk menjelajahi langit. Burung juga memiliki berbagai macam suara yang bisa digunakan untuk berkomunikasi atau menarik perhatian pasangannya.</p>
+    <div class="content">
+        <!-- Paragraf 1 -->
+        <div class="paragraf">
+            <p>
+                <strong>Burung</strong> adalah hewan yang dikenal dengan <strong>kemampuan terbangnya</strong>. Mereka memiliki sayap yang memungkinkan mereka untuk menjelajahi langit. 
+                Burung juga memiliki berbagai macam suara yang digunakan untuk <strong>berkomunikasi</strong> atau menarik perhatian pasangannya. 
+                Mereka biasanya membangun <strong>sarang</strong> di tempat yang aman seperti pohon, dan beberapa burung bahkan mampu <strong>terbang ribuan kilometer</strong> saat bermigrasi.
+            </p>
         </div>
-        <div class="wave-separator"></div>
-    </div>
 
-    <!-- Section 2 -->
-    <div class="section-2">
-        <div class="paragraf paragraf-2">
-            <p><span>Ular:</span> Ular adalah reptil yang memiliki tubuh panjang dan ramping. Mereka tidak memiliki kaki, tetapi bergerak dengan cara melata. Ular seringkali ditemukan di hutan atau gurun, dan beberapa jenis ular berbahaya dengan bisa yang mematikan.</p>
+        <!-- Paragraf 2 -->
+        <div class="paragraf">
+            <p>
+                <strong>Ular</strong> adalah reptil yang memiliki tubuh <strong>panjang dan ramping</strong>. Meskipun tidak memiliki kaki, ular dapat bergerak dengan <strong>cara melata</strong>. 
+                Mereka ditemukan di berbagai habitat seperti hutan, gurun, hingga rawa. Beberapa jenis ular memiliki <strong>bisa yang mematikan</strong>, sementara yang lain tidak berbahaya. 
+                Selain itu, ular memiliki kemampuan <strong>menelan mangsa</strong> yang ukurannya lebih besar dari tubuh mereka.
+            </p>
         </div>
-        <div class="wave-separator"></div>
-    </div>
 
-    <!-- Section 3 -->
-    <div class="section-3">
-        <div class="paragraf paragraf-3">
-            <p><span>Kodok:</span> Kodok adalah amfibi yang biasanya hidup di dekat perairan. Mereka memiliki kulit yang lembab dan tubuh yang cenderung gemuk. Kodok dikenal dengan loncatannya yang tinggi dan suaranya yang khas saat musim kawin.</p>
+        <!-- Paragraf 3 -->
+        <div class="paragraf">
+            <p>
+                <strong>Kodok</strong> adalah hewan amfibi yang biasanya hidup di dekat <strong>perairan</strong>. Mereka memiliki kulit yang <strong>lembab</strong> dan tubuh yang cenderung <strong>gemuk</strong>. 
+                Kodok dikenal dengan <strong>loncatannya yang tinggi</strong> dan suaranya yang khas selama <strong>musim kawin</strong>. Beberapa spesies kodok juga memiliki <strong>racun</strong> pada kulitnya 
+                untuk melindungi diri dari predator.
+            </p>
         </div>
-        <div class="wave-separator"></div>
-    </div>
 
-    <!-- Section 4 -->
-    <div class="section-4">
-        <div class="paragraf paragraf-4">
-            <p><span>Ayam:</span> Ayam adalah unggas yang sering dijadikan hewan peliharaan dan sumber pangan. Mereka memiliki bulu yang halus dan kokok yang khas. Ayam juga menghasilkan telur yang berguna sebagai makanan sehari-hari.</p>
+        <!-- Paragraf 4 -->
+        <div class="paragraf">
+            <p>
+                <strong>Ayam</strong> adalah unggas yang sering dipelihara untuk <strong>kebutuhan pangan</strong>. Mereka menghasilkan <strong>telur</strong> yang kaya protein dan daging yang sering dikonsumsi. 
+                Ayam memiliki bulu yang halus dan suara <strong>kokok</strong> yang khas, terutama pada ayam jantan. Dalam tradisi tertentu, ayam juga memiliki peran penting dalam <strong>upacara adat</strong>.
+            </p>
         </div>
     </div>
-
 </body>
 </html>
