@@ -13,145 +13,110 @@
         }
 
         body {
-            margin: 0;
+            background-color: #fff8e1; /* Warna dasar background tubuh */
+            padding: 20px 10px;
         }
 
-        /* Set background untuk tiap section */
-        .section {
-            width: 100%;
-            padding: 20px;
-        }
-
+        /* Warna background untuk tiap section (LB lebih gelap dari kontainer) */
         .section-1 {
-            background-color: #fbc02d; /* Kuning tua */
+            background-color: #ffecb3; /* LB Oranye muda */
+            padding: 20px 10px;
+            position: relative;
         }
-
         .section-2 {
-            background-color: #388e3c; /* Hijau tua */
+            background-color: #ffd54f; /* LB Oranye medium */
+            padding: 20px 10px;
+            position: relative;
         }
-
         .section-3 {
-            background-color: #1565c0; /* Biru tua */
+            background-color: #ffb300; /* LB Oranye lebih gelap */
+            padding: 20px 10px;
+            position: relative;
         }
-
         .section-4 {
-            background-color: #7b1fa2; /* Ungu tua */
+            background-color: #ff6f00; /* LB Oranye tua */
+            padding: 20px 10px;
+            position: relative;
         }
 
-        /* Paragraf styling */
+        /* Style paragraf */
         .paragraf {
+            margin: 0 auto;
             padding: 20px;
             text-align: center;
-            color: white;
+            color: #ffffff; /* Teks putih */
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             font-size: 1.2em;
-            margin: 0 auto;
             width: 90%;
+            max-width: 600px;
         }
 
-        /* Container gradiasi untuk paragraf */
+        /* Warna gradasi cerah untuk container */
         .paragraf-1 {
-            background: linear-gradient(90deg, #fff176, #ffeb3b); /* Kuning cerah */
+            background: linear-gradient(90deg, #ffe082, #ffd54f); /* Kontainer Oranye muda cerah */
         }
-
         .paragraf-2 {
-            background: linear-gradient(90deg, #81c784, #66bb6a); /* Hijau cerah */
+            background: linear-gradient(90deg, #ffca28, #ffc107); /* Kontainer Oranye medium cerah */
         }
-
         .paragraf-3 {
-            background: linear-gradient(90deg, #64b5f6, #42a5f5); /* Biru cerah */
+            background: linear-gradient(90deg, #ffa000, #ff8f00); /* Kontainer Oranye lebih gelap cerah */
         }
-
         .paragraf-4 {
-            background: linear-gradient(90deg, #ba68c8, #ab47bc); /* Ungu cerah */
+            background: linear-gradient(90deg, #f57c00, #ef6c00); /* Kontainer Oranye tua */
         }
 
-        /* Garis pemisah */
-        .separator {
+        /* Teks judul tebal */
+        .paragraf p span {
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        /* Pemisah berbentuk gelombang */
+        .wave-separator {
+            position: absolute;
+            bottom: 0;
             width: 100%;
             height: 50px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .separator-1::before,
-        .separator-2::before,
-        .separator-3::before,
-        .separator-4::before {
-            content: '';
-            position: absolute;
-            width: 200%;
-            height: 50px;
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="500" height="50"><path d="M0 25 Q50 0 100 25 T500 25" stroke="white" stroke-width="1" fill="none"/><path d="M0 25 Q50 50 100 25 T500 25" stroke="white" stroke-width="1" fill="none"/><path d="M0 15 Q40 35 120 5 T500 15" stroke="white" stroke-width="1" fill="none"/></svg>');
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120"><path fill="white" fill-opacity="1" d="M0,96L60,85.3C120,75,240,53,360,80C480,107,600,181,720,186.7C840,192,960,128,1080,112C1200,96,1320,128,1380,144L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>');
+            background-repeat: no-repeat;
             background-size: cover;
-            animation: blink 0.3s infinite alternate;
-        }
-
-        /* Warna pemisah sesuai section */
-        .separator-1::before {
-            background-color: #fbc02d;
-        }
-
-        .separator-2::before {
-            background-color: #388e3c;
-        }
-
-        .separator-3::before {
-            background-color: #1565c0;
-        }
-
-        .separator-4::before {
-            background-color: #7b1fa2;
-        }
-
-        /* Animasi berkedip */
-        @keyframes blink {
-            0% {
-                opacity: 1;
-            }
-            50% {
-                opacity: 0.5;
-            }
-            100% {
-                opacity: 1;
-            }
+            transform: scaleY(-1);
         }
     </style>
 </head>
 <body>
 
     <!-- Section 1 -->
-    <div class="section section-1">
+    <div class="section-1">
         <div class="paragraf paragraf-1">
-            <p>Burung adalah hewan yang dikenal dengan kemampuan terbangnya. Mereka memiliki sayap yang memungkinkan mereka untuk menjelajahi langit. Burung juga memiliki berbagai macam suara yang bisa digunakan untuk berkomunikasi atau menarik perhatian pasangannya.</p>
+            <p><span>Burung:</span> Burung adalah hewan yang dikenal dengan kemampuan terbangnya. Mereka memiliki sayap yang memungkinkan mereka untuk menjelajahi langit. Burung juga memiliki berbagai macam suara yang bisa digunakan untuk berkomunikasi atau menarik perhatian pasangannya.</p>
         </div>
+        <div class="wave-separator"></div>
     </div>
-    <div class="separator separator-1"></div>
 
     <!-- Section 2 -->
-    <div class="section section-2">
+    <div class="section-2">
         <div class="paragraf paragraf-2">
-            <p>Ular adalah reptil yang memiliki tubuh panjang dan ramping. Mereka tidak memiliki kaki, tetapi bergerak dengan cara melata. Ular seringkali ditemukan di hutan atau gurun, dan beberapa jenis ular berbahaya dengan bisa yang mematikan.</p>
+            <p><span>Ular:</span> Ular adalah reptil yang memiliki tubuh panjang dan ramping. Mereka tidak memiliki kaki, tetapi bergerak dengan cara melata. Ular seringkali ditemukan di hutan atau gurun, dan beberapa jenis ular berbahaya dengan bisa yang mematikan.</p>
         </div>
+        <div class="wave-separator"></div>
     </div>
-    <div class="separator separator-2"></div>
 
     <!-- Section 3 -->
-    <div class="section section-3">
+    <div class="section-3">
         <div class="paragraf paragraf-3">
-            <p>Kodok adalah amfibi yang biasanya hidup di dekat perairan. Mereka memiliki kulit yang lembab dan tubuh yang cenderung gemuk. Kodok dikenal dengan loncatannya yang tinggi dan suaranya yang khas saat musim kawin.</p>
+            <p><span>Kodok:</span> Kodok adalah amfibi yang biasanya hidup di dekat perairan. Mereka memiliki kulit yang lembab dan tubuh yang cenderung gemuk. Kodok dikenal dengan loncatannya yang tinggi dan suaranya yang khas saat musim kawin.</p>
         </div>
+        <div class="wave-separator"></div>
     </div>
-    <div class="separator separator-3"></div>
 
     <!-- Section 4 -->
-    <div class="section section-4">
+    <div class="section-4">
         <div class="paragraf paragraf-4">
-            <p>Ayam adalah unggas yang sering dijadikan hewan peliharaan dan sumber pangan. Mereka memiliki bulu yang halus dan kokok yang khas. Ayam juga menghasilkan telur yang berguna sebagai makanan sehari-hari.</p>
+            <p><span>Ayam:</span> Ayam adalah unggas yang sering dijadikan hewan peliharaan dan sumber pangan. Mereka memiliki bulu yang halus dan kokok yang khas. Ayam juga menghasilkan telur yang berguna sebagai makanan sehari-hari.</p>
         </div>
     </div>
-    <div class="separator separator-4"></div>
 
 </body>
 </html>
