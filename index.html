@@ -12,39 +12,43 @@
             font-family: 'Arial', sans-serif;
         }
         body {
-            padding: 20px;
-            background-color: #e0e0e0;
+            margin: 0;
         }
 
-        /* Latar belakang body yang berbeda untuk tiap bagian */
-        .section-1 {
-            background-color: #fffde7; /* Kuning muda */
+        /* Setiap Section memenuhi layar penuh */
+        .section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             padding: 20px;
+        }
+
+        /* Warna background untuk tiap section (LB lebih gelap) */
+        .section-1 {
+            background-color: #fbc02d; /* Kuning tua */
         }
         .section-2 {
-            background-color: #e8f5e9; /* Hijau muda */
-            padding: 20px;
+            background-color: #388e3c; /* Hijau tua */
         }
         .section-3 {
-            background-color: #e3f2fd; /* Biru muda */
-            padding: 20px;
+            background-color: #1565c0; /* Biru tua */
         }
         .section-4 {
-            background-color: #f3e5f5; /* Ungu muda */
-            padding: 20px;
+            background-color: #7b1fa2; /* Ungu tua */
         }
 
         /* Style paragraf */
         .paragraf {
             padding: 20px;
-            margin: 20px 0;
-            color: white;
             text-align: center;
+            color: white;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            font-size: 1.2em;
         }
 
-        /* Warna untuk kontainer dan latar belakang */
+        /* Warna gradasi cerah untuk container */
         .paragraf-1 {
             background: linear-gradient(90deg, #fff176, #ffeb3b); /* Kuning cerah gradiasi */
         }
@@ -58,13 +62,12 @@
             background: linear-gradient(90deg, #ba68c8, #ab47bc); /* Ungu cerah gradiasi */
         }
 
-        /* Pemisah dengan garis benang kusut */
+        /* Garis pemisah (benang kusut bercahaya) */
         .separator {
             width: 100%;
             height: 50px;
             position: relative;
             overflow: hidden;
-            margin: 20px 0;
         }
         .separator::before {
             content: '';
@@ -93,7 +96,7 @@
 <body>
 
     <!-- Section 1 -->
-    <div class="section-1">
+    <div class="section section-1">
         <div class="paragraf paragraf-1">
             <p>Burung adalah hewan yang dikenal dengan kemampuan terbangnya. Mereka memiliki sayap yang memungkinkan mereka untuk menjelajahi langit. Burung juga memiliki berbagai macam suara yang bisa digunakan untuk berkomunikasi atau menarik perhatian pasangannya.</p>
         </div>
@@ -101,7 +104,7 @@
     <div class="separator"></div>
 
     <!-- Section 2 -->
-    <div class="section-2">
+    <div class="section section-2">
         <div class="paragraf paragraf-2">
             <p>Ular adalah reptil yang memiliki tubuh panjang dan ramping. Mereka tidak memiliki kaki, tetapi bergerak dengan cara melata. Ular seringkali ditemukan di hutan atau gurun, dan beberapa jenis ular berbahaya dengan bisa yang mematikan.</p>
         </div>
@@ -109,7 +112,7 @@
     <div class="separator"></div>
 
     <!-- Section 3 -->
-    <div class="section-3">
+    <div class="section section-3">
         <div class="paragraf paragraf-3">
             <p>Kodok adalah amfibi yang biasanya hidup di dekat perairan. Mereka memiliki kulit yang lembab dan tubuh yang cenderung gemuk. Kodok dikenal dengan loncatannya yang tinggi dan suaranya yang khas saat musim kawin.</p>
         </div>
@@ -117,7 +120,7 @@
     <div class="separator"></div>
 
     <!-- Section 4 -->
-    <div class="section-4">
+    <div class="section section-4">
         <div class="paragraf paragraf-4">
             <p>Ayam adalah unggas yang sering dijadikan hewan peliharaan dan sumber pangan. Mereka memiliki bulu yang halus dan kokok yang khas. Ayam juga menghasilkan telur yang berguna sebagai makanan sehari-hari.</p>
         </div>
