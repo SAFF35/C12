@@ -11,34 +11,34 @@
             box-sizing: border-box;
             font-family: 'Arial', sans-serif;
         }
+
         body {
             margin: 0;
         }
 
-        /* Setiap Section memenuhi layar penuh */
+        /* Set background untuk tiap section */
         .section {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            width: 100%;
             padding: 20px;
         }
 
-        /* Warna background untuk tiap section (LB lebih gelap) */
         .section-1 {
             background-color: #fbc02d; /* Kuning tua */
         }
+
         .section-2 {
             background-color: #388e3c; /* Hijau tua */
         }
+
         .section-3 {
             background-color: #1565c0; /* Biru tua */
         }
+
         .section-4 {
             background-color: #7b1fa2; /* Ungu tua */
         }
 
-        /* Style paragraf */
+        /* Paragraf styling */
         .paragraf {
             padding: 20px;
             text-align: center;
@@ -46,46 +46,72 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             font-size: 1.2em;
+            margin: 0 auto;
+            width: 90%;
         }
 
-        /* Warna gradasi cerah untuk container */
+        /* Container gradiasi untuk paragraf */
         .paragraf-1 {
-            background: linear-gradient(90deg, #fff176, #ffeb3b); /* Kuning cerah gradiasi */
-        }
-        .paragraf-2 {
-            background: linear-gradient(90deg, #81c784, #66bb6a); /* Hijau cerah gradiasi */
-        }
-        .paragraf-3 {
-            background: linear-gradient(90deg, #64b5f6, #42a5f5); /* Biru cerah gradiasi */
-        }
-        .paragraf-4 {
-            background: linear-gradient(90deg, #ba68c8, #ab47bc); /* Ungu cerah gradiasi */
+            background: linear-gradient(90deg, #fff176, #ffeb3b); /* Kuning cerah */
         }
 
-        /* Garis pemisah (benang kusut bercahaya) */
+        .paragraf-2 {
+            background: linear-gradient(90deg, #81c784, #66bb6a); /* Hijau cerah */
+        }
+
+        .paragraf-3 {
+            background: linear-gradient(90deg, #64b5f6, #42a5f5); /* Biru cerah */
+        }
+
+        .paragraf-4 {
+            background: linear-gradient(90deg, #ba68c8, #ab47bc); /* Ungu cerah */
+        }
+
+        /* Garis pemisah */
         .separator {
             width: 100%;
             height: 50px;
             position: relative;
             overflow: hidden;
         }
-        .separator::before {
+
+        .separator-1::before,
+        .separator-2::before,
+        .separator-3::before,
+        .separator-4::before {
             content: '';
             position: absolute;
             width: 200%;
             height: 50px;
             background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="500" height="50"><path d="M0 25 Q50 0 100 25 T500 25" stroke="white" stroke-width="1" fill="none"/><path d="M0 25 Q50 50 100 25 T500 25" stroke="white" stroke-width="1" fill="none"/><path d="M0 15 Q40 35 120 5 T500 15" stroke="white" stroke-width="1" fill="none"/></svg>');
             background-size: cover;
-            animation: blink 0.5s infinite alternate;
+            animation: blink 0.3s infinite alternate;
         }
 
-        /* Animasi berkedip cepat */
+        /* Warna pemisah sesuai section */
+        .separator-1::before {
+            background-color: #fbc02d;
+        }
+
+        .separator-2::before {
+            background-color: #388e3c;
+        }
+
+        .separator-3::before {
+            background-color: #1565c0;
+        }
+
+        .separator-4::before {
+            background-color: #7b1fa2;
+        }
+
+        /* Animasi berkedip */
         @keyframes blink {
             0% {
                 opacity: 1;
             }
             50% {
-                opacity: 0.3;
+                opacity: 0.5;
             }
             100% {
                 opacity: 1;
@@ -101,7 +127,7 @@
             <p>Burung adalah hewan yang dikenal dengan kemampuan terbangnya. Mereka memiliki sayap yang memungkinkan mereka untuk menjelajahi langit. Burung juga memiliki berbagai macam suara yang bisa digunakan untuk berkomunikasi atau menarik perhatian pasangannya.</p>
         </div>
     </div>
-    <div class="separator"></div>
+    <div class="separator separator-1"></div>
 
     <!-- Section 2 -->
     <div class="section section-2">
@@ -109,7 +135,7 @@
             <p>Ular adalah reptil yang memiliki tubuh panjang dan ramping. Mereka tidak memiliki kaki, tetapi bergerak dengan cara melata. Ular seringkali ditemukan di hutan atau gurun, dan beberapa jenis ular berbahaya dengan bisa yang mematikan.</p>
         </div>
     </div>
-    <div class="separator"></div>
+    <div class="separator separator-2"></div>
 
     <!-- Section 3 -->
     <div class="section section-3">
@@ -117,7 +143,7 @@
             <p>Kodok adalah amfibi yang biasanya hidup di dekat perairan. Mereka memiliki kulit yang lembab dan tubuh yang cenderung gemuk. Kodok dikenal dengan loncatannya yang tinggi dan suaranya yang khas saat musim kawin.</p>
         </div>
     </div>
-    <div class="separator"></div>
+    <div class="separator separator-3"></div>
 
     <!-- Section 4 -->
     <div class="section section-4">
@@ -125,6 +151,7 @@
             <p>Ayam adalah unggas yang sering dijadikan hewan peliharaan dan sumber pangan. Mereka memiliki bulu yang halus dan kokok yang khas. Ayam juga menghasilkan telur yang berguna sebagai makanan sehari-hari.</p>
         </div>
     </div>
+    <div class="separator separator-4"></div>
 
 </body>
 </html>
