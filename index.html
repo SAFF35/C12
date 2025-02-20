@@ -1,83 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deskripsi Hewan</title>
+    <title>Affiliate Smart</title>
     <style>
-        * {
+        /* Latar belakang gradasi coklat ke coklak */
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #8B4513, #8B4514);
+            color: #333;
+            line-height: 1.6;
         }
 
-        body {
-            background: linear-gradient(to bottom, #ffe082, #ffca28, #ffa000, #f57c00); /* Gradasi oranye cerah */
-            margin: 0;
-            padding: 20px 0;
-            color: #fff;
-        }
-
-        .content {
-            margin: 0 auto;
+        /* Kontainer utama dengan latar belakang biru ke putih */
+        .container {
             max-width: 800px;
+            margin: 50px auto;
+            background: linear-gradient(to bottom, #ADD8E6, #FFFFFF);
             padding: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
         }
 
-        .paragraf {
+        /* Logo di bagian atas */
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        /* Gambar tambahan */
+        .main-image {
+            text-align: center;
             margin: 20px 0;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            font-size: 1.2em;
-            line-height: 1.8;
         }
 
-        /* Huruf tebal dan timbul */
-        .paragraf strong {
-            color: #ffe082;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        .main-image img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Judul besar dengan warna hitam dan bayangan abu-abu */
+        h1 {
+            text-align: center;
+            color: #000; /* Hitam */
+            font-size: 2rem;
             font-weight: bold;
+            text-shadow: 2px 2px #808080; /* Bayangan abu-abu */
+        }
+
+        /* Teks paragraf */
+        p {
+            text-align: justify;
+            margin: 15px 0; /* Langkah satu baris kosong */
+            font-weight: bold; /* Semua huruf tebal */
+        }
+
+        /* Teks besar hijau dengan garis bawah */
+        .highlight-text {
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 30px 0 10px;
+            text-transform: uppercase;
+            color: #4CAF50; /* Hijau segar */
+            text-decoration: underline;
+        }
+
+        /* Tombol tautan dengan animasi membesar */
+        .cta {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .cta a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background: linear-gradient(to right, #007BFF, #6A0DAD);
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, background 0.3s ease;
+        }
+
+        .cta a:hover {
+            transform: scale(1.1); /* Membesar saat hover */
+            background: linear-gradient(to right, #6A0DAD, #007BFF);
         }
     </style>
 </head>
 <body>
-    <div class="content">
-        <!-- Paragraf 1 -->
-        <div class="paragraf">
-            <p>
-                <strong>Burung</strong> adalah hewan yang dikenal dengan <strong>kemampuan terbangnya</strong>. Mereka memiliki sayap yang memungkinkan mereka untuk menjelajahi langit. 
-                Burung juga memiliki berbagai macam suara yang digunakan untuk <strong>berkomunikasi</strong> atau menarik perhatian pasangannya. 
-                Mereka biasanya membangun <strong>sarang</strong> di tempat yang aman seperti pohon, dan beberapa burung bahkan mampu <strong>terbang ribuan kilometer</strong> saat bermigrasi.
-            </p>
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="https://affiliate035.wordpress.com/wp-content/uploads/2024/12/20241209_015856.png?w=768" alt="Logo SAF">
         </div>
 
-        <!-- Paragraf 2 -->
-        <div class="paragraf">
-            <p>
-                <strong>Ular</strong> adalah reptil yang memiliki tubuh <strong>panjang dan ramping</strong>. Meskipun tidak memiliki kaki, ular dapat bergerak dengan <strong>cara melata</strong>. 
-                Mereka ditemukan di berbagai habitat seperti hutan, gurun, hingga rawa. Beberapa jenis ular memiliki <strong>bisa yang mematikan</strong>, sementara yang lain tidak berbahaya. 
-                Selain itu, ular memiliki kemampuan <strong>menelan mangsa</strong> yang ukurannya lebih besar dari tubuh mereka.
-            </p>
+        <!-- Gambar tambahan -->
+        <div class="main-image">
+            <img src="https://affiliate035.wordpress.com/wp-content/uploads/2024/12/20241128_204611.png?w=768" alt="Gambar SAF">
         </div>
 
-        <!-- Paragraf 3 -->
-        <div class="paragraf">
-            <p>
-                <strong>Kodok</strong> adalah hewan amfibi yang biasanya hidup di dekat <strong>perairan</strong>. Mereka memiliki kulit yang <strong>lembab</strong> dan tubuh yang cenderung <strong>gemuk</strong>. 
-                Kodok dikenal dengan <strong>loncatannya yang tinggi</strong> dan suaranya yang khas selama <strong>musim kawin</strong>. Beberapa spesies kodok juga memiliki <strong>racun</strong> pada kulitnya 
-                untuk melindungi diri dari predator.
-            </p>
-        </div>
+        <!-- Judul -->
+        <h1>SMART AFFILIATE</h1>
 
-        <!-- Paragraf 4 -->
-        <div class="paragraf">
-            <p>
-                <strong>Ayam</strong> adalah unggas yang sering dipelihara untuk <strong>kebutuhan pangan</strong>. Mereka menghasilkan <strong>telur</strong> yang kaya protein dan daging yang sering dikonsumsi. 
-                Ayam memiliki bulu yang halus dan suara <strong>kokok</strong> yang khas, terutama pada ayam jantan. Dalam tradisi tertentu, ayam juga memiliki peran penting dalam <strong>upacara adat</strong>.
-            </p>
+        <!-- Teks utama -->
+        <p>
+            Selamat datang, para pembisnis online yang inspiratif! Dengan bergabung menjadi Mitra Affiliate Smart, Anda telah mengambil langkah penting menuju kesuksesan finansial yang berkelanjutan.
+        </p>
+        <p>
+            Terima kasih telah menjadi bagian dari kami, Anda akan semakin mandiri secara finansial. Kemandirian ini akan memberikan Anda keleluasaan untuk membantu sesama dan meraih impian Anda dan keluarga. Mari kita bersama-sama membangun masa depan yang lebih baik.
+        </p>
+        <p>
+            Dengan usaha yang tulus dan ikhlas, kita dapat meraih penghasilan yang berkah dan melimpah. Setiap langkah yang kita ambil akan mendekatkan kita pada tujuan yang mulia. Kami siap mendukung Anda untuk mencapai kesuksesan yang berkah. Dengan izin Allah, kita akan mencapai kesuksesan yang berkah.
+        </p>
+        <p>
+            Seperti kata pepatah: Berakit-rakit kita ke hulu, berenang-renang ke tepian. Bersakit-sakit dahulu bersenang-senang kemudian.
+        </p>
+        <p>
+            Masa depan yang sukses adalah hasil dari kerja keras kita saat ini. Mulailah sekarang dan raih kesuksesan.
+        </p>
+        <p style="text-align: center; font-weight: bold;">Salam Sukses dan Penuh Semangat!</p>
+
+        <!-- Teks besar sebelum tombol -->
+        <div class="highlight-text">LIHAT JARINGAN, KOMISI, BONUS DLL KLIK TOMBOL DI BAWAH LALU LOGIN MASUKKAN KODE ID ANDA & PASWORD</div>
+
+        <!-- Tombol tautan -->
+        <div class="cta">
+            <a href="https://saff35.github.io/Login" target="_blank">KLIK DI SINI</a>
         </div>
     </div>
 </body>
